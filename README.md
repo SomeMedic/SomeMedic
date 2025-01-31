@@ -7,4 +7,4 @@
 
 -----
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SomeMedic&theme=vue-dark&hide=dart,cmake&langs_count=10&layout=compact&size_weight=0.5&count_weight=0.5)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![trophy](https://github-profile-trophy.vercel.app/?username=SomeMedic&theme=onedark&no-frame=true&column=5)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SomeMedic&theme=vue-dark&hide=dart,cmake&langs_count=10&layout=compact&size_weight=0.5&count_weight=0.5)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![trophy](https://github-profile-trophy.vercel.app/?username=SomeMedic&theme=onedark&no-frame=true&column=4)
