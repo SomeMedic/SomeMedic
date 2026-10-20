@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="125" viewBox="0 0 1200 125" role="img" aria-labelledby="title desc">
+  <title id="title">Let&#x27;s build something useful.</title>
+  <desc id="desc">A good conversation is a good first commit.</desc>
+  <style>:root{--bg:#f1faf5;--panel:#e5f3eb;--grid:#ccdfd4;--ink:#102f23;--muted:#4b7260;--accent:#087e52;--cyan:#087f83}text{font-variant-ligatures:none}</style>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="var(--grid)" stroke-width=".65"/></pattern>
+    <radialGradient id="aura"><stop stop-color="var(--accent)" stop-opacity=".12"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="125" rx="18" fill="var(--bg)"/>
+  <path d="M0 1H1200" fill="none" stroke="var(--grid)" /><text x="1" y="62" fill="var(--ink)" font-family="Bahnschrift,'Trebuchet MS',sans-serif" font-size="27" font-weight="600" letter-spacing="0.3" >LET&#x27;S BUILD SOMETHING USEFUL.</text><text x="1" y="96" fill="var(--muted)" font-family="'Cascadia Code',Consolas,monospace" font-size="12" font-weight="400" letter-spacing="0.9" >A GOOD CONVERSATION IS A GOOD FIRST COMMIT.</text><path d="M920 58H985L998 40L1010 78L1026 23L1042 58H1200" fill="none" stroke="var(--accent)" stroke-width="2"/>
+</svg>

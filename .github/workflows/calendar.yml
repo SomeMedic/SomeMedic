@@ -1,0 +1,50 @@
+name: Refresh contribution landscape
+
+on:
+  schedule:
+    - cron: '23 5 * * *'
+  workflow_dispatch:
+  push:
+    branches: ['**']
+    paths:
+      - scripts/update_calendar.py
+      - scripts/test_calendar.py
+      - .github/workflows/calendar.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-landscape-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.ref_type == 'branch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Official actions/checkout v5 commit, verified against its GitHub tag.
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+      - name: Verify source parsing and failure preservation
+        run: python3 -m unittest discover -s scripts -p 'test_calendar.py' -v
+      - name: Fetch the public calendar and render all themes
+        run: python3 scripts/update_calendar.py --username SomeMedic
+      - name: Save refreshed assets
+        env:
+          UPDATE_BRANCH: ${{ github.ref_name }}
+        run: |
+          git add -- assets/calendar-dark.svg assets/calendar-light.svg assets/calendar-mobile-dark.svg assets/calendar-mobile-light.svg assets/calendar-data.json
+          if git diff --cached --quiet; then
+            echo 'Calendar assets already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Keep the profile activity landscape current' \
+            -m 'Constraint: Render only the anonymous public GitHub contribution aggregate.' \
+            -m 'Confidence: high' \
+            -m 'Scope-risk: narrow' \
+            -m 'Directive: Preserve the last good assets when fetching or validation fails.' \
+            -m 'Tested: Calendar parser, reconciliation, rendering and failure preservation tests.'
+          git push origin "HEAD:${UPDATE_BRANCH}"

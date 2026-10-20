@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="250" viewBox="0 0 600 250" role="img" aria-labelledby="title desc">
+  <title id="title">03 / EverythingUI</title>
+  <desc id="desc">EverythingUI — interface engineering.</desc>
+  <style>:root{--bg:#f1faf5;--panel:#e5f3eb;--grid:#ccdfd4;--ink:#102f23;--muted:#4b7260;--accent:#087e52;--cyan:#087f83}text{font-variant-ligatures:none}</style>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="var(--grid)" stroke-width=".65"/></pattern>
+    <radialGradient id="aura"><stop stop-color="var(--accent)" stop-opacity=".12"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="600" height="250" rx="18" fill="var(--bg)"/>
+  <rect x="1" y="1" width="598" height="248" rx="18" fill="var(--panel)" stroke="var(--grid)"/><text x="30" y="40" fill="var(--accent)" font-family="'Cascadia Code',Consolas,monospace" font-size="12" font-weight="500" letter-spacing="0.8" >EXPERIMENT / 03</text><text x="30" y="85" fill="var(--ink)" font-family="Bahnschrift,'Trebuchet MS',sans-serif" font-size="38" font-weight="600" letter-spacing="-1" >EverythingUI</text><text x="31" y="122" fill="var(--muted)" font-family="'Cascadia Code',Consolas,monospace" font-size="12" font-weight="400" letter-spacing="1.4" >INTERFACE ENGINEERING</text><path d="M30 146H570" fill="none" stroke="var(--grid)" /><text x="30" y="219" fill="var(--accent)" font-family="'Cascadia Code',Consolas,monospace" font-size="13" font-weight="400" letter-spacing="0.5" >COMPONENTS → INTERACTIONS</text>
+</svg>

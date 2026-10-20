@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="132" viewBox="0 0 600 132" role="img" aria-labelledby="title desc">
+  <title id="title">Let&#x27;s build something useful.</title>
+  <desc id="desc">Get in touch using the links below.</desc>
+  <style>:root{--bg:#f1faf5;--panel:#e5f3eb;--grid:#ccdfd4;--ink:#102f23;--muted:#4b7260;--accent:#087e52;--cyan:#087f83}text{font-variant-ligatures:none}</style>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="var(--grid)" stroke-width=".65"/></pattern>
+    <radialGradient id="aura"><stop stop-color="var(--accent)" stop-opacity=".12"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="600" height="132" rx="18" fill="var(--bg)"/>
+  <path d="M1 1H599" fill="none" stroke="var(--grid)" /><text x="24" y="57" fill="var(--ink)" font-family="Bahnschrift,'Trebuchet MS',sans-serif" font-size="32" font-weight="600" letter-spacing="0" >LET&#x27;S BUILD</text><text x="24" y="101" fill="var(--ink)" font-family="Bahnschrift,'Trebuchet MS',sans-serif" font-size="32" font-weight="600" letter-spacing="0" >SOMETHING USEFUL.</text><path d="M420 45H460L470 28L482 66L498 11L514 45H576" fill="none" stroke="var(--accent)" stroke-width="2"/>
+</svg>
